@@ -1,4 +1,15 @@
 const mineflayer = require('mineflayer');
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+app.get('/', (req, res) => {
+  res.send('✅ I bot Minecraft sono attivi!');
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 Server Express in ascolto su porta ${PORT}`);
+});
+
 
 function createBot1() {
   const bot1 = mineflayer.createBot({
