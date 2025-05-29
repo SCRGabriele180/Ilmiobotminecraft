@@ -1,4 +1,11 @@
 {
+  "name": "minecraft-bot",
+  "version": "1.0.0",
+  "description": "Un bot Mineflayer per server Minecraft",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
     "mineflayer": "^4.29.0"
   }
